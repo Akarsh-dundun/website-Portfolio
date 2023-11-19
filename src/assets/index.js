@@ -28,6 +28,7 @@ import wipro from "./company/wipro.logo.png";
 import Library from "./img/library.png";
 import House from './img/House.png';
 import Movie from './img/movie.png';
+import Toxic from './img/toxic.png';
 
 export {
   logo,
@@ -53,4 +54,5 @@ export {
   Library,
   House,
   Movie,
+  Toxic,
 };

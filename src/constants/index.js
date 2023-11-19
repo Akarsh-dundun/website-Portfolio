@@ -18,6 +18,7 @@ import {
     Library,
     House,
     Movie,
+    Toxic,
   } from "../assets";
   
   export const navLinks = [
@@ -167,6 +168,27 @@ import {
       ],
       image: Movie,
       source_code_link: "https://github.com/Akarsh-dundun/Movie_Review_System",
+    },
+    {
+      name: "Toxic Comment Classifier",
+      description:
+        "Machine Learning Algorithm that can be used to comb through various comments.",
+      tags: [
+        {
+          name: "Pandas",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "Scikit-Learn",
+          color: "green-text-gradient",
+        },
+        {
+          name: "Numpy",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: Toxic,
+      source_code_link: "https://github.com/Akarsh-dundun/Toxic-Comment",
     },
     {
       name: "Bangalore House Price Prediction",
