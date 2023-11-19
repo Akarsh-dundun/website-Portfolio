@@ -149,27 +149,6 @@ import {
   
   const projects = [
     {
-      name: "Movie Review Application",
-      description:
-        "Web-based platform that allows users to search and get a verdict whether to watch a movie or not based on user reviews from ImDb.",
-      tags: [
-        {
-          name: "React",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "Scikit-Learn",
-          color: "green-text-gradient",
-        },
-        {
-          name: "tailwind",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: Movie,
-      source_code_link: "https://github.com/Akarsh-dundun/Movie_Review_System",
-    },
-    {
       name: "Toxic Comment Classifier",
       description:
         "Machine Learning Algorithm that can be used to comb through various comments.",
@@ -189,6 +168,27 @@ import {
       ],
       image: Toxic,
       source_code_link: "https://github.com/Akarsh-dundun/Toxic-Comment",
+    },
+    {
+      name: "Movie Review Application",
+      description:
+        "Web-based platform that allows users to search and get a verdict whether to watch a movie or not based on user reviews from ImDb.",
+      tags: [
+        {
+          name: "React",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "Scikit-Learn",
+          color: "green-text-gradient",
+        },
+        {
+          name: "tailwind",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: Movie,
+      source_code_link: "https://github.com/Akarsh-dundun/Movie_Review_System",
     },
     {
       name: "Bangalore House Price Prediction",
