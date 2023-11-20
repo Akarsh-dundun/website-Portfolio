@@ -151,7 +151,7 @@ import {
     {
       name: "Toxic Comment Classifier",
       description:
-        "Machine Learning Algorithm that can be used to comb through various comments.",
+        "Machine Learning Algorithm that can be used to comb through various comments detecting toxicity.",
       tags: [
         {
           name: "Pandas",
