@@ -172,7 +172,7 @@ import {
     {
       name: "Movie Review Application",
       description:
-        "Web-based platform that allows users to search and get a verdict whether to watch a movie or not based on user reviews from ImDb.",
+        "Web-based platform that allows users to search and get a verdict whether to watch a movie based on user reviews from ImDb.",
       tags: [
         {
           name: "React",
