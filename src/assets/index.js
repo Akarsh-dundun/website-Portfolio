@@ -30,6 +30,9 @@ import House from './img/House.png';
 import Movie from './img/movie.png';
 import Toxic from './img/toxic.png';
 
+//Papers
+import Kite from "./img/TetherForce.png";
+
 export {
   logo,
   backend,
@@ -55,4 +58,5 @@ export {
   House,
   Movie,
   Toxic,
+  Kite
 };

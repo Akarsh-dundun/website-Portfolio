@@ -10,6 +10,7 @@ import Tech from './components/Tech';
 import Works from './components/Works';
 import Contact from './components/Contact';
 import StarsCanvas from './components/Stars';
+import Papers from './components/Papers';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
       <About />
       <Experience />
       <Tech />
+      <Papers />
       <Works />
       <div className='relative z-0'>
           <Contact />
