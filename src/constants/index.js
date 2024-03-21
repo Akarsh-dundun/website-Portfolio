@@ -105,6 +105,17 @@ import {
   
   const experiences = [
     {
+      title: "Research Internship",
+      company_name: "Boston University",
+      icon: wipro,
+      date: "January 2024 - Present",
+      points: [
+        "Devised robust machine learning pipelines to detect brain cancer in mice.",
+        "Work with various visualisation tools such as FSL and SMP.",
+        "Supervised by Dr. Hong Pan, Department of Computer Science, Boston University."
+      ]
+    },
+    {
       title: "Intern",
       company_name: "Wipro",
       icon: wipro,
@@ -118,7 +129,7 @@ import {
         "Conducted experiments and performed model evaluation to measure the accuracy, precision, and recall of ML models.",
 
       ],
-    }
+    },
   ];
   
   const testimonials = [
