@@ -109,6 +109,7 @@ import {
       title: "Research Intern",
       company_name: "Boston University",
       icon: BU,
+      iconBg: "#fff",
       date: "January 2024 - Present",
       points: [
         "Devised robust machine learning pipelines to detect brain cancer in mice.",
