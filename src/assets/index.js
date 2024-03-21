@@ -23,6 +23,7 @@ import TF from './img/tensorflow.svg';
 
 // Importing company Photos
 import wipro from "./company/wipro.logo.png";
+import BU from "./company/BU.png"
 
 // Projects
 import Library from "./img/library.png";
@@ -54,9 +55,10 @@ export {
   cpp,
   TF,
   wipro,
+  BU,
   Library,
   House,
   Movie,
   Toxic,
-  Kite
+  Kite,
 };

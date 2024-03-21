@@ -15,6 +15,7 @@ import {
     cpp,
     TF,
     wipro,
+    BU,
     Library,
     House,
     Movie,
@@ -105,9 +106,9 @@ import {
   
   const experiences = [
     {
-      title: "Research Internship",
+      title: "Research Intern",
       company_name: "Boston University",
-      icon: wipro,
+      icon: BU,
       date: "January 2024 - Present",
       points: [
         "Devised robust machine learning pipelines to detect brain cancer in mice.",
