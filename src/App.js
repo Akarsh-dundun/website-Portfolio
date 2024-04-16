@@ -12,6 +12,7 @@ import Contact from './components/Contact';
 import StarsCanvas from './components/Stars';
 import Papers from './components/Papers';
 import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from "@vercel/speed-insights/react"
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
           <StarsCanvas />
       </div>
       <Analytics />
+      <SpeedInsights />
     </BrowserRouter>
     
   );
