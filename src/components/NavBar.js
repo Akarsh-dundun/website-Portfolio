@@ -47,9 +47,9 @@ export const NavBar = () => {
             </Nav>
             <span className="navbar-text">
                 <div className="social-icon">
-                    <a href="https://www.linkedin.com/in/akarsh-gupta-889425213/"><img src={Linkedin} alt="" /></a>
-                    <a href="https://github.com/Akarsh-dundun"><img src={git} alt="" /></a>
-                    <a href="https://www.instagram.com/_akarshgupta_/"><img src={Instagram} alt="" /></a>
+                    <a href="https://www.linkedin.com/in/akarsh-gupta-889425213/" target="_blank" rel="noopener noreferrer"><img src={Linkedin} alt="" /></a>
+                    <a href="https://github.com/Akarsh-dundun" target="_blank" rel="noopener noreferrer"><img src={git} alt="" /></a>
+                    <a href="https://www.instagram.com/_akarshgupta_/" target="_blank" rel="noopener noreferrer"><img src={Instagram} alt="" /></a>
                 </div>
                 <button href='contact' className="vvd" onClick={() => console.log('connect')}>
                     <span>
