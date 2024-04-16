@@ -11,6 +11,7 @@ import Works from './components/Works';
 import Contact from './components/Contact';
 import StarsCanvas from './components/Stars';
 import Papers from './components/Papers';
+import { Analytics } from '@vercel/analytics/react';
 
 function App() {
   return (
@@ -28,7 +29,9 @@ function App() {
           <Contact />
           <StarsCanvas />
       </div>
+      <Analytics />
     </BrowserRouter>
+    
   );
 }
 
