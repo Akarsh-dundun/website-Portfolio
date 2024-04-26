@@ -1,7 +1,8 @@
 
 import { useState } from "react";
 import { useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, animateScroll as scroll } from "react-scroll";
+//import { Link } from "react-router-dom";
 import { Navbar, Container, Nav } from "react-bootstrap";
 import logo from '../assets/img/logo-color.png';
 import Linkedin from '../assets/img/nav-icon1.svg';
@@ -51,11 +52,20 @@ export const NavBar = () => {
                     <a href="https://github.com/Akarsh-dundun" target="_blank" rel="noopener noreferrer"><img src={git} alt="" /></a>
                     <a href="https://www.instagram.com/_akarshgupta_/" target="_blank" rel="noopener noreferrer"><img src={Instagram} alt="" /></a>
                 </div>
-                <button href='contact' className="vvd" onClick={() => console.log('connect')}>
+                
+                <Link
+                            to="contact"
+                            spy={true}
+                            smooth={true}
+                            offset={-50} // Adjust offset for smoother scrolling
+                        >
+                    <button href='contact' className="vvd" onClick={() => console.log('connect')}>
                     <span>
                         Let's Connect
                     </span>
-                </button>
+                    </button>        
+                
+                </Link>
             </span>
             </Navbar.Collapse>
         </Container>
