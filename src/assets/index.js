@@ -23,7 +23,9 @@ import TF from './img/tensorflow.svg';
 
 // Importing company Photos
 import wipro from "./company/wipro.logo.png";
-import BU from "./company/BU.png"
+import BU from "./company/BU.png";
+import nvidia from "./company/Nvidia.png";
+import tiger from "./company/Tiger Analytics.jpeg";
 
 // Projects
 import Library from "./img/library.png";
@@ -56,6 +58,8 @@ export {
   TF,
   wipro,
   BU,
+  nvidia,
+  tiger,
   Library,
   House,
   Movie,

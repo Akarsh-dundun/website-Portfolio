@@ -16,6 +16,8 @@ import {
     TF,
     wipro,
     BU,
+    nvidia,
+    tiger,
     Library,
     House,
     Movie,
@@ -106,11 +108,31 @@ import {
   
   const experiences = [
     {
+      title: "Student Intern",
+      company_name: "Nvidia",
+      icon: nvidia,
+      iconBg: "#fff",
+      date: "January 2024 - April 2024",
+      points: [
+        "Developing a fully functional chatbot application that can engage users in mental health assessments and provide personalized resource recommendations",
+        "Documenting details regarding the system architecture, integration of the LLM and knowledge base, and the overall workflow"
+      ]
+    },
+    {
+      title: "Summer Intern",
+      company_name: "Tiger Analytics",
+      icon: tiger,
+      iconBg: "#fff",
+      date: "January 2024 - April 2024",
+      points: [
+      ]
+    },
+    {
       title: "Research Intern",
       company_name: "Boston University",
       icon: BU,
       iconBg: "#fff",
-      date: "January 2024 - Present",
+      date: "January 2024 - April 2024",
       points: [
         "Devised robust machine learning pipelines to detect brain cancer in mice.",
         "Work with various visualisation tools such as FSL and SMP.",
