@@ -112,7 +112,7 @@ import {
       company_name: "Nvidia",
       icon: nvidia,
       iconBg: "#fff",
-      date: "January 2024 - April 2024",
+      date: "April 2024 - Ongoing",
       points: [
         "Developing a fully functional chatbot application that can engage users in mental health assessments and provide personalized resource recommendations",
         "Documenting details regarding the system architecture, integration of the LLM and knowledge base, and the overall workflow"
@@ -123,7 +123,7 @@ import {
       company_name: "Tiger Analytics",
       icon: tiger,
       iconBg: "#fff",
-      date: "January 2024 - April 2024",
+      date: "April 2024 - Ongoing",
       points: [
       ]
     },
