@@ -51,7 +51,7 @@ export const Banner = () => {
                             <span className="tagline">Welcome to my Portfolio</span>
                             <h1>{`Hi I'm Akarsh Gupta `}<span className="wrap">{text}</span></h1>
                             <p>{"A passionate and creative web designer with a keen eye for detail and a love for crafting beautiful and functional digital experiences.I have honed my skills in web design, back-end development and machine learning. I strive to create visually stunning websites that not only captivate users but also provide seamless navigation and an intuitive user interface."}</p>
-                            <button onClick={() => console.log('connected')}>Let's Connect<ArrowRightCircle size={25} /></button>
+                            <button href='contact' onClick={() => console.log('connected')}>Let's Connect<ArrowRightCircle size={25} /></button>
                         </Col>
                         <Col xs={12} md={6} xl={5}>
                             <img src={headerImg} alt="Header Img" />
