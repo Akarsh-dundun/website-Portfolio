@@ -13,6 +13,7 @@ import StarsCanvas from './components/Stars';
 import Papers from './components/Papers';
 import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from "@vercel/speed-insights/react"
+import { OrbitingCirclesDemo } from './components/OrbitCircles';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
       <About />
       <Experience />
       <Tech />
+      <OrbitingCirclesDemo />
       <Papers />
       <Works />
       <div className='relative z-0'>
