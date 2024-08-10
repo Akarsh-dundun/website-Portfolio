@@ -1,10 +1,15 @@
-import OrbitingCircles from "../components/magicui/orbiting-circles.tsx";
+import OrbitingCircles from "../components/magicui/orbiting-circles.jsx";
 
 export function OrbitingCirclesDemo() {
+
+  let r = 30;
+
+  
+
   return (
-    <div className="relative flex h-[500px] w-full max-w-[32rem] items-center justify-center overflow-hidden rounded-lg border bg-background md:shadow-xl">
+    <div className="relative flex h-[42rem] w-full items-center justify-center overflow-hidden bg-[#121212]">
       <span className="pointer-events-none whitespace-pre-wrap bg-gradient-to-b from-black to-gray-300/80 bg-clip-text text-center text-8xl font-semibold leading-none text-transparent dark:from-white dark:to-slate-900/10">
-        Circles
+        Penis
       </span>
 
       {/* Inner Circles */}
@@ -12,7 +17,7 @@ export function OrbitingCirclesDemo() {
         className="h-[30px] w-[30px] border-none bg-transparent"
         duration={20}
         delay={20}
-        radius={80}
+        radius={2*r}
       >
         <Icons.whatsapp />
       </OrbitingCircles>
@@ -20,28 +25,45 @@ export function OrbitingCirclesDemo() {
         className="h-[30px] w-[30px] border-none bg-transparent"
         duration={20}
         delay={10}
-        radius={80}
+        radius={2*r}
       >
         <Icons.notion />
       </OrbitingCircles>
 
       {/* Outer Circles (reverse) */}
       <OrbitingCircles
-        className="h-[50px] w-[50px] border-none bg-transparent"
-        radius={190}
+        className="h-[40px] w-[40px] border-none bg-transparent"
+        radius={4*r}
         duration={20}
         reverse
       >
         <Icons.googleDrive />
       </OrbitingCircles>
       <OrbitingCircles
-        className="h-[50px] w-[50px] border-none bg-transparent"
-        radius={190}
+        className="h-[40px] w-[40px] border-none bg-transparent"
+        radius={4*r}
         duration={20}
         delay={20}
         reverse
       >
         <Icons.gitHub />
+      </OrbitingCircles>
+
+      <OrbitingCircles
+        className="h-[40px] w-[40px] border-none bg-transparent"
+        duration={20}
+        delay={20}
+        radius={6*r}
+      >
+        <Icons.whatsapp />
+      </OrbitingCircles>
+      <OrbitingCircles
+        className="h-[40px] w-[40px] border-none bg-transparent"
+        duration={20}
+        delay={10}
+        radius={6*r}
+      >
+        <Icons.notion />
       </OrbitingCircles>
     </div>
   );
