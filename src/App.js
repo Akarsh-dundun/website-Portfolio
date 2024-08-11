@@ -24,7 +24,6 @@ function App() {
       </div>
       <About />
       <Experience />
-      <Tech />
       <Tools />
       <Papers />
       <Works />
