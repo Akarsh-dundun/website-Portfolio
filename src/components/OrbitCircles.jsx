@@ -1,7 +1,145 @@
 import OrbitingCircles from "../components/magicui/orbiting-circles.jsx";
 import { Tools } from "../constants/index.js";
 
-export function OrbitingCirclesDemo() {
+export function OrbitingCirclesLanguages() {
+
+  let r = 30;
+
+  
+
+  return (
+    <div className="relative flex h-[42rem] w-full items-center justify-center overflow-hidden bg-[#121212]">
+      <span className="pointer-events-none whitespace-pre-wrap bg-gradient-to-b from-black to-gray-300/80 bg-clip-text text-center text-6xl font-semibold leading-none text-transparent dark:from-white dark:to-slate-900/10">
+        Languages
+      </span>
+
+      {/* Inner Circles */}
+      <OrbitingCircles
+        className="h-[30px] w-[30px] border-none bg-transparent"
+        duration={20}
+        delay={20}
+        radius={3*r}
+      >
+        <Tools.cplusplus />
+      </OrbitingCircles>
+      <OrbitingCircles
+        className="h-[30px] w-[30px] border-none bg-transparent"
+        duration={20}
+        delay={10}
+        radius={3*r}
+      >
+        <Tools.python />
+      </OrbitingCircles>
+
+      {/* Outer Circles (reverse) */}
+      <OrbitingCircles
+        className="h-[40px] w-[40px] border-none bg-transparent"
+        radius={5*r}
+        duration={20}
+        reverse
+      >
+        <Tools.javascript />
+      </OrbitingCircles>
+      <OrbitingCircles
+        className="h-[40px] w-[40px] border-none bg-[#FFFFFF]"
+        radius={5*r}
+        duration={20}
+        delay={20}
+        reverse
+      >
+        <Tools.sql />
+      </OrbitingCircles>
+
+      {/* <OrbitingCircles
+        className="h-[40px] w-[40px] border-none bg-transparent"
+        duration={20}
+        delay={20}
+        radius={6*r}
+      >
+        <Tools.whatsapp />
+      </OrbitingCircles>
+      <OrbitingCircles
+        className="h-[40px] w-[40px] border-none bg-transparent"
+        duration={20}
+        delay={10}
+        radius={6*r}
+      >
+        <Tools.notion />
+      </OrbitingCircles> */}
+    </div>
+  );
+}
+
+export function OrbitingCirclesMlFrameworks() {
+
+  let r = 30;
+
+  
+
+  return (
+    <div className="relative flex h-[42rem] w-full items-center justify-center overflow-hidden bg-[#121212]">
+      <span className="pointer-events-none whitespace-pre-wrap bg-gradient-to-b from-black to-gray-300/80 bg-clip-text text-center text-6xl font-semibold leading-none text-transparent dark:from-white dark:to-slate-900/10">
+        Frameworks
+      </span>
+
+      {/* Inner Circles */}
+      <OrbitingCircles
+        className="h-[30px] w-[30px] border-none bg-transparent"
+        duration={20}
+        delay={20}
+        radius={2*r}
+      >
+        <Tools.tensorflow />
+      </OrbitingCircles>
+      <OrbitingCircles
+        className="h-[30px] w-[30px] border-none bg-transparent"
+        duration={20}
+        delay={10}
+        radius={2*r}
+      >
+        <Tools.pytorch />
+      </OrbitingCircles>
+
+      {/* Outer Circles (reverse) */}
+      <OrbitingCircles
+        className="h-[40px] w-[40px] border-none bg-transparent"
+        radius={4*r}
+        duration={20}
+        reverse
+      >
+        <Tools.gitHub />
+      </OrbitingCircles>
+      <OrbitingCircles
+        className="h-[40px] w-[40px] border-none bg-transparent"
+        radius={4*r}
+        duration={20}
+        delay={20}
+        reverse
+      >
+        <Tools.streamlit />
+      </OrbitingCircles>
+
+      <OrbitingCircles
+        className="h-[40px] w-[40px] border-none bg-transparent"
+        duration={20}
+        delay={20}
+        radius={6*r}
+      >
+        <Tools.docker />
+      </OrbitingCircles>
+      <OrbitingCircles
+        className="h-[40px] w-[40px] border-none bg-transparent"
+        duration={20}
+        delay={10}
+        radius={6*r}
+      >
+        <Tools.git />
+      </OrbitingCircles>
+    </div>
+  );
+}
+
+export function OrbitingCirclesOtherFrameworks() {
 
   let r = 30;
 

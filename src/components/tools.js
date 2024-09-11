@@ -1,6 +1,6 @@
 import React from 'react';
 import { VerticalTimeline, VerticalTimelineElement} from 'react-vertical-timeline-component'
-import { OrbitingCirclesDemo } from './OrbitCircles';
+import { OrbitingCirclesLanguages, OrbitingCirclesMlFrameworks } from './OrbitCircles';
 
 import { motion } from 'framer-motion'
 
@@ -16,18 +16,18 @@ function Tools() {
     <>
       <motion.div variants={textVariant()}>
             <p className={styles.sectionSubText}>
-            What have I done so far</p>
+            Skills</p>
             <h2 className={styles.sectionHeadText}
             >Overview</h2>
       </motion.div>
 
       <div className='p-1 '>
           <span className='flex gap-x-16'>
-              <OrbitingCirclesDemo />
+              <OrbitingCirclesLanguages />
               
-              <OrbitingCirclesDemo />
+              <OrbitingCirclesMlFrameworks />
           </span>
-          <div className=''><span><OrbitingCirclesDemo /></span></div>
+          {/* <div className=''><span><OrbitingCirclesLanguages /></span></div> */}
           
       </div>
     </>
