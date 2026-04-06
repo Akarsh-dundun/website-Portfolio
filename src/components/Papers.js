@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { SectionWrapper } from '../hoc';
 import { papers } from '../constants';
-import { FileText, ExternalLink, Download } from 'lucide-react';
+import { FileText, Download } from 'lucide-react';
 
 const PaperCard = ({ paper, index }) => {
     return (

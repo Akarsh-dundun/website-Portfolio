@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { SectionWrapper } from '../hoc';
 import { projects } from '../constants';
-import { ExternalLink, Github } from 'lucide-react';
+import { ExternalLink } from 'lucide-react';
 import { github } from '../assets';
 
 const ProjectCard = ({ project, index }) => {
