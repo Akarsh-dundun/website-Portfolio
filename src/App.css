@@ -38,24 +38,29 @@
    3. NAVBAR ACTIVE STATE
    ======================================== */
 
+/* For frosted glass floating navbar */
+.floating-navbar .nav-item.active {
+  background: rgba(0, 102, 255, 0.25) !important;
+  color: #FFFFFF !important;
+  box-shadow: 
+    inset 0 1px 3px rgba(0, 0, 0, 0.15),
+    0 0 0 2px rgba(0, 102, 255, 0.4),
+    0 4px 12px rgba(0, 102, 255, 0.3) !important;
+}
+ 
+.floating-navbar .nav-item.active:hover {
+  background: rgba(0, 102, 255, 0.3) !important;
+}
+ 
+/* For traditional navbar (if used) */
 .navbar-nav .nav-link.active {
   color: var(--accent-blue) !important;
   border-bottom: 2px solid var(--accent-blue);
 }
-
-.nav-item.active {
-  background: var(--accent-blue-light);
-  color: var(--accent-blue) !important;
-}
-
-.nav-item.active::after {
-  content: '';
-  position: absolute;
-  bottom: -2px;
-  left: 0;
-  right: 0;
-  height: 2px;
-  background: var(--accent-blue);
+ 
+/* Remove the ::after pseudo-element for floating navbar */
+.floating-navbar .nav-item.active::after {
+  display: none;
 }
 
 /* ========================================
