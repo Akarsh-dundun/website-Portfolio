@@ -7,16 +7,16 @@ export const Banner = () => {
     const [text, setText] = useState('');
     const [isDeleting, setIsDeleting] = useState(false);
     const [loopNumber, setLoopNumber] = useState(0);
-    const toRotate = ["ML ENGINEER", "BACKEND SOFTWARE ENGINEER", "STUDENT"];
     const [delta, setDelta] = useState(150);
     const period = 2000;
-
+    
     // Toggle typing animation on/off
     const ENABLE_TYPING = true;
-
     
-        // wrap tick in useCallback
+    
+    // wrap tick in useCallback
     const tick = useCallback(() => {
+        const toRotate = ["ML ENGINEER", "BACKEND SOFTWARE ENGINEER", "STUDENT"];
         let i = loopNumber % toRotate.length;
         let fullText = toRotate[i];
         let updatedText = isDeleting 
@@ -37,7 +37,7 @@ export const Banner = () => {
             setLoopNumber(loopNumber + 1);
             setDelta(150);
         }
-    }, [text, isDeleting, loopNumber, toRotate, period]);
+    }, [text, isDeleting, loopNumber, period]);
 
     // now tick can safely go in the dependency array
     useEffect(() => {
