@@ -18,11 +18,17 @@ import {
     BU,
     nvidia,
     tiger,
+    edmo,
+    thinklude,
+    apple,
     Library,
     House,
     Movie,
     Toxic,
     Kite,
+    Brain,
+    F1Replay,
+    GithubRoaster
   } from "../assets";
   
   export const navLinks = [
@@ -53,10 +59,10 @@ import {
       title: "Backend Development",
       icon: backend,
     },
-    {
-      title: "Electrical Engineering",
-      icon: creator,
-    },
+    // {
+    //   title: "Electrical Engineering",
+    //   icon: creator,
+    // },
   ];
   
   const technologies = [
@@ -268,54 +274,85 @@ import {
   };
   
   const experiences = [
-    {
-      title: "Student Intern",
-      company_name: "Nvidia",
-      icon: nvidia,
-      iconBg: "#fff",
-      date: "April 2024 - Ongoing",
-      points: [
-        "Developing a fully functional chatbot application that can engage users in mental health assessments and provide personalized resource recommendations",
-        "Documenting details regarding the system architecture, integration of the LLM and knowledge base, and the overall workflow"
-      ]
-    },
-    {
-      title: "Summer Intern",
-      company_name: "Tiger Analytics",
-      icon: tiger,
-      iconBg: "#fff",
-      date: "April 2024 - Ongoing",
-      points: [
-      ]
-    },
-    {
-      title: "Research Intern",
-      company_name: "Boston University",
-      icon: BU,
-      iconBg: "#fff",
-      date: "January 2024 - April 2024",
-      points: [
-        "Devised robust machine learning pipelines to detect brain cancer in mice.",
-        "Work with various visualisation tools such as FSL and SMP.",
-        "Supervised by Dr. Hong Pan, Department of Computer Science, Boston University."
-      ]
-    },
-    {
-      title: "Intern",
-      company_name: "Wipro",
-      icon: wipro,
-      iconBg: "#fff",
-      date: "June 2023 - July 2023",
-      points: [
-        "Assisted in developing and implementing machine learning models for the Movie Review Application.",
-        "Developing solutions using machine learning for existing or new problems pertaining to the public",
-        "Conducted data preprocessing, feature engineering, and data analysis to optimize model performance.",
-        "Collaborated with cross-functional teams to gather requirements and define project objectives.",
-        "Conducted experiments and performed model evaluation to measure the accuracy, precision, and recall of ML models.",
-
-      ],
-    },
-  ];
+  {
+    title: "Software Engineering Intern",
+    company_name: "Apple",
+    icon: apple,
+    iconBg: "#000",
+    date: "Incoming Summer 2026",
+  },
+  {
+    title: "Student Intern",
+    company_name: "Nvidia",
+    icon: nvidia,
+    iconBg: "#fff",
+    date: "April 2024 - April 2025",
+    points: [
+      "Developed a fully functional chatbot for mental health assessments using LLMs, providing personalised resource recommendations to users.",
+      "Streamlined internal workflows improving both operational efficiency and user experience.",
+      "Documented system architecture, LLM and knowledge base integration, and end-to-end workflow design.",
+    ],
+  },
+  {
+    title: "Machine Learning Intern",
+    company_name: "Edmo",
+    icon: edmo,
+    iconBg: "#fff",
+    date: "July 2024 - September 2025",
+    points: [
+      "Created personalised learning tools and built agentic systems that generated and evaluated educational content.",
+      "Designed ML-driven features that measurably improved student engagement metrics.",
+    ],
+  },
+  {
+    title: "Machine Learning Intern",
+    company_name: "Thinklude (RhoSigma)",
+    icon: thinklude,
+    iconBg: "#fff",
+    date: "June 2024 - August 2024",
+    points: [
+      "Built advanced CV + NLP pipelines using VGG11-based architectures and multi-head attention models, processing 10,000+ data points and cutting training time by 10 hours.",
+      "Collaborated across engineering and product to deploy ML models, boosting development speed by 20% and contributing to three production-ready AI solutions.",
+    ],
+  },
+  {
+    title: "Data Science Intern",
+    company_name: "Tiger Analytics",
+    icon: tiger,
+    iconBg: "#fff",
+    date: "April 2024 - June 2024",
+    points: [
+      "Performed large-scale data processing and transformation tasks to prepare datasets for downstream analytics and modelling.",
+      "Contributed to data engineering pipelines, ensuring data quality, consistency, and accessibility across workflows.",
+      "Collaborated with analytics teams to support client-facing data science deliverables.",
+    ],
+  },
+  {
+    title: "Research Intern",
+    company_name: "Boston University",
+    icon: BU,
+    iconBg: "#fff",
+    date: "February 2024 - May 2024",
+    points: [
+      "Devised robust machine learning pipelines to detect brain tumours in mice using neuroimaging data.",
+      "Worked with visualisation tools including FSL and SPM for brain mapping analysis.",
+      "Supervised by Dr. Hong Pan, Department of Computer Science, Boston University.",
+    ],
+  },
+  {
+    title: "Generative AI Intern",
+    company_name: "Wipro",
+    icon: wipro,
+    iconBg: "#fff",
+    date: "June 2023 - July 2023",
+    points: [
+      "Developed and implemented ML models for the Movie Review Application using sentiment analysis.",
+      "Conducted data preprocessing, feature engineering, and analysis to optimise model performance.",
+      "Collaborated with cross-functional teams to gather requirements and define project objectives.",
+      "Evaluated model accuracy, precision, and recall across multiple experiments.",
+    ],
+  },
+];
   
   const testimonials = [
     {
@@ -343,31 +380,85 @@ import {
       image: "https://randomuser.me/api/portraits/women/6.jpg",
     },
   ];
+
   const papers = [
     {
-      name: "Tether Force Prediction",
+      name: "Tether Force Estimation on Airborne Kite Using Machine Learning Methods",
       description:
-      "Research centered around using ML to predict the tether force that will be generated by a kite given the inputs such as altitude, longitude and latitude, Wind speed etc.",
+        "Evaluated 6+ ML models on 5,000+ data points to predict tether force on a kite following an eight-fold trajectory, achieving 87% prediction accuracy across mixed wind conditions.",
+      status: "Published",
+      authors: "Akarsh Gupta, et al.",
       tags: [
-        {
-          name: "Pandas",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "Scikit-Learn",
-          color: "green-text-gradient",
-        },
-        {
-          name: "Numpy",
-          color: "pink-text-gradient",
-        },
+        { name: "Pandas", color: "blue-text-gradient" },
+        { name: "Scikit-Learn", color: "green-text-gradient" },
+        { name: "Numpy", color: "pink-text-gradient" },
       ],
       image: Kite,
-      source_code_link: "",
-    }
+      venue: "MDPI Wind Journal 2025", 
+      source_code_link: "https://www.mdpi.com/2674-032X/5/1/5",
+      pdf_link: "",
+    },
+    {
+      name: "Exploring Brain Mapping and Neuroimaging: A Comprehensive Journey into Brain Charting",
+      description:
+        "A comprehensive exploration of brain charting techniques and neuroimaging methodologies, with applications in detecting neurological conditions including brain cancer in mice.",
+      status: "Published",
+      authors: "Akarsh Gupta, et al.",
+      tags: [
+        { name: "FSL", color: "blue-text-gradient" },
+        { name: "SPM", color: "green-text-gradient" },
+        { name: "Neuroimaging", color: "pink-text-gradient" },
+      ],
+      image: Brain, // add a brain/neuro image import
+      venue: "Exploratio", 
+      source_code_link: "https://exploratiojournal.com/exploring-brain-mapping-and-neuroimaging-a-comprehensive-journey-into-brain-charting/",
+      pdf_link: "", // add your paper PDF link if available
+    },
   ];
 
   const projects = [
+    {
+      name: "F1 Replay",
+      description:
+        "Interactive web app to explore every race of the F1 season — lap charts, tyre strategies, and driver duels explained in plain English. Built with FastF1 and Next.js.",
+      tags: [
+        {
+          name: "Next.js",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "FastF1",
+          color: "green-text-gradient",
+        },
+        {
+          name: "Python",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: F1Replay, // add screenshot
+      live_link: "https://f1replay.vercel.app/",
+    },
+    {
+      name: "GH Roast",
+      description:
+        "AI-powered GitHub profile roaster that analyses a user's repos and activity, then delivers a savage, LLM-generated roast. Supports 1v1 battle mode and a hall of shame leaderboard.",
+      tags: [
+        {
+          name: "Next.js",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "Groq",
+          color: "green-text-gradient",
+        },
+        {
+          name: "GitHub API",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: GithubRoaster, // add screenshot
+      live_link: "https://gh-roaster.vercel.app/",
+    },
     {
       name: "Toxic Comment Classifier",
       description:
@@ -387,7 +478,7 @@ import {
         },
       ],
       image: Toxic,
-      source_code_link: "https://github.com/Akarsh-dundun/Toxic-Comment",
+      source_code_link: "",
     },
     {
       name: "Movie Review Application",
@@ -408,7 +499,7 @@ import {
         },
       ],
       image: Movie,
-      source_code_link: "https://github.com/Akarsh-dundun/Movie_Review_System",
+      source_code_link: "",
     },
     {
       name: "Bangalore House Price Prediction",
@@ -429,7 +520,7 @@ import {
         },
       ],
       image: House,
-      source_code_link: "https://github.com/Akarsh-dundun/Bangalore-House-Price-Prediction",
+      source_code_link: "",
     },
     {
       name: "Library Management System",
@@ -450,7 +541,7 @@ import {
         },
       ],
       image: Library,
-      source_code_link: "https://github.com/Akarsh-dundun/Library-Management-System",
+      source_code_link: "",
     },
   ];
   

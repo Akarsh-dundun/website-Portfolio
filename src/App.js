@@ -3,6 +3,7 @@ import './App.css';
 import { BrowserRouter } from 'react-router-dom';
 import { NavBar } from './components/NavBar';
 import { Banner } from './components/Banner';
+// import { Banner } from './components/BannerGlitch';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import About from './components/About';
 import Experience from './components/Experience';
@@ -14,6 +15,7 @@ import Papers from './components/Papers';
 import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from "@vercel/speed-insights/react"
 import Tools from './components/tools';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -30,6 +32,7 @@ function App() {
       <div className='relative z-0'>
           <Contact />
           <StarsCanvas />
+          <Footer />
       </div>
       <Analytics />
       <SpeedInsights />

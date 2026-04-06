@@ -7,6 +7,7 @@ import github from "./img/github.png";
 import menu from "./img/menu.svg";
 import close from "./img/close.svg";
 
+
 // Importing framworks that we know
 import css from "./tech/css.png";
 import html from "./tech/html.png";
@@ -26,6 +27,9 @@ import wipro from "./company/wipro.logo.png";
 import BU from "./company/BU.png";
 import nvidia from "./company/Nvidia.png";
 import tiger from "./company/Tiger Analytics.jpeg";
+import edmo from "./company/edmo.jpeg"
+import thinklude from "./company/thinklude.jpeg"
+import apple from "./company/apple.png"
 
 // Projects
 import Library from "./img/library.png";
@@ -35,6 +39,10 @@ import Toxic from './img/toxic.png';
 
 //Papers
 import Kite from "./img/TetherForce.png";
+import Brain from "./img/Brain.png"
+
+import F1Replay from "./projects/F1Replay.png"
+import GithubRoaster from "./projects/github_roaster.png"
 
 export {
   logo,
@@ -60,9 +68,15 @@ export {
   BU,
   nvidia,
   tiger,
+  edmo, 
+  thinklude,
+  apple,
   Library,
   House,
   Movie,
   Toxic,
   Kite,
+  Brain,
+  F1Replay,
+  GithubRoaster
 };
