@@ -79,50 +79,49 @@ export const NavBar = () => {
     return (
         <>
             <nav className={`floating-navbar ${scrolled ? 'scrolled' : ''}`}>
-                <a 
+                <button  
                     className="brand-name"
                     onClick={() => scrollToSection('#home')}
                 >
                     Akarsh Gupta
-                </a>
+                </button>
                 
                 <div className="nav-divider"></div>
                 
                 <div className="nav-links">
-                    <a 
+                    <button 
                         className={`nav-item ${activeLink === 'home' ? 'active' : ''}`}
                         onClick={() => scrollToSection('#home')}
                     >
                         Home
-                    </a>
-                    {/* <a 
-                        className={`nav-item ${activeLink === 'about' ? 'active' : ''}`}
-                        onClick={() => scrollToSection('#about')}
-                    >
-                        About
-                    </a> */}
-                    <a 
+                    </button>
+                    <button 
                         className={`nav-item ${activeLink === 'work' ? 'active' : ''}`}
                         onClick={() => scrollToSection('#work')}
                     >
                         Experience
-                    </a>
-                    <a 
+                    </button>
+                    <button 
                         className={`nav-item ${activeLink === 'projects' ? 'active' : ''}`}
                         onClick={() => scrollToSection('#projects')}
                     >
                         Projects
-                    </a>
-                    <a 
+                    </button>
+                    <button 
                         className={`nav-item ${activeLink === 'contact' ? 'active' : ''}`}
                         onClick={() => scrollToSection('#contact')}
                     >
                         Contact
-                    </a>
+                    </button>
                 </div>
             </nav>
 
             <style jsx>{`
+                    .brand-name, .nav-item {
+                    background: none;
+                    border: none;
+                    font-family: inherit;
+                    }
                 .floating-navbar {
                     position: fixed;
                     top: 2rem;

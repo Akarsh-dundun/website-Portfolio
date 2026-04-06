@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import { Container } from "react-bootstrap";
 import { ArrowRight } from "react-bootstrap-icons";
 import { motion } from "framer-motion";
@@ -14,20 +14,9 @@ export const Banner = () => {
     // Toggle typing animation on/off
     const ENABLE_TYPING = true;
 
-    useEffect(() => {
-        if (!ENABLE_TYPING) {
-            setText("ML ENGINEER / BACKEND SOFTWARE ENGINEER / STUDENT");
-            return;
-        }
-
-        let ticker = setInterval(() => {
-            tick();
-        }, delta);
-
-        return () => { clearInterval(ticker) };
-    }, [text, delta, ENABLE_TYPING]);
-
-    const tick = () => {
+    
+        // wrap tick in useCallback
+    const tick = useCallback(() => {
         let i = loopNumber % toRotate.length;
         let fullText = toRotate[i];
         let updatedText = isDeleting 
@@ -48,14 +37,25 @@ export const Banner = () => {
             setLoopNumber(loopNumber + 1);
             setDelta(150);
         }
-    }
+    }, [text, isDeleting, loopNumber, toRotate, period]);
 
-    const scrollToContact = () => {
-        const contactSection = document.querySelector('#contact');
-        if (contactSection) {
-            contactSection.scrollIntoView({ behavior: 'smooth' });
+    // now tick can safely go in the dependency array
+    useEffect(() => {
+        if (!ENABLE_TYPING) {
+            setText("ML ENGINEER / BACKEND SOFTWARE ENGINEER / STUDENT");
+            return;
         }
-    }
+        let ticker = setInterval(() => {
+            tick();
+        }, delta);
+        return () => { clearInterval(ticker) };
+    }, [text, delta, ENABLE_TYPING, tick])
+        const scrollToContact = () => {
+            const contactSection = document.querySelector('#contact');
+            if (contactSection) {
+                contactSection.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
 
     return (
         <section className="brutalist-hero" id="home">
