@@ -25,7 +25,7 @@ export const Banner = () => {
         }, delta);
 
         return () => { clearInterval(ticker) };
-    }, [text, delta]);
+    }, [text, delta, ENABLE_TYPING]);
 
     const tick = () => {
         let i = loopNumber % toRotate.length;
