@@ -25,6 +25,7 @@ import {
     Movie,
     Toxic,
     Kite,
+    Genome,
     Brain,
     F1Replay,
     GithubRoaster
@@ -381,6 +382,22 @@ import {
   ];
 
   const papers = [
+    {
+      name: "SCOPE: Siamese Contrastive Operon Pair Embeddings for Functional Sequence Representation and Classification",
+      description:
+        "Developed a Siamese contrastive learning framework for operon pair classification using protein language model embeddings, achieving competitive ROC-AUC performance on the DGEB benchmark for functional genomic sequence representation.",
+      status: "Published",
+      authors: "Akarsh Gupta, Kenneth Rodrigues, Sagnik Chatterjee",
+      tags: [
+        { name: "PyTorch", color: "blue-text-gradient" },
+        { name: "Siamese Networks", color: "green-text-gradient" },
+        { name: "Computational Biology", color: "pink-text-gradient" },
+      ],
+      image: Genome,
+      venue: "arXiv 2026",
+      source_code_link: "https://arxiv.org/abs/2605.11022",
+      pdf_link: "https://arxiv.org/pdf/2605.11022.pdf",
+    },
     {
       name: "Tether Force Estimation on Airborne Kite Using Machine Learning Methods",
       description:
