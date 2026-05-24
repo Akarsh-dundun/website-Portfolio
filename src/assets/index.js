@@ -41,6 +41,7 @@ import Toxic from './img/toxic.png';
 import Kite from "./img/TetherForce.png";
 import Brain from "./img/Brain.png";
 import Genome from "./img/genome.jpeg"
+import llb from "./img/llb.png"
 
 import F1Replay from "./projects/F1Replay.png"
 import GithubRoaster from "./projects/github_roaster.png"
@@ -79,6 +80,7 @@ export {
   Kite,
   Genome,
   Brain,
+  llb,
   F1Replay,
   GithubRoaster
 };

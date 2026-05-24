@@ -27,6 +27,7 @@ import {
     Kite,
     Genome,
     Brain,
+    llb,
     F1Replay,
     GithubRoaster
   } from "../assets";
@@ -382,6 +383,22 @@ import {
   ];
 
   const papers = [
+    {
+      name: "Stacking-Based Weighting for Large Language Bayes in M-Open Settings",
+      description:
+        "Proposed a stacking-based aggregation method for Large Language Bayes that optimizes predictive performance rather than marginal likelihood. Derived a variational lower bound (ELBO) to enable tractable leave-one-out cross-validation in latent-variable models, achieving comparable predictive accuracy while reducing weight concentration on single misspecified models.",
+      status: "Published",
+      authors: "Anant Bhide, Akarsh Gupta, Edmond Cunningham, Justin Domke",
+      tags: [
+        { name: "NumPyro", color: "blue-text-gradient" },
+        { name: "Bayesian Inference", color: "green-text-gradient" },
+        { name: "Variational Inference", color: "pink-text-gradient" },
+      ],
+      image: llb, // You'll need to provide the image
+      venue: "EIML @ ICML 2026", 
+      source_code_link: "https://openreview.net/forum?id=KP3uvjP06e",
+      pdf_link: "https://openreview.net/pdf?id=KP3uvjP06e",
+    },
     {
       name: "SCOPE: Siamese Contrastive Operon Pair Embeddings for Functional Sequence Representation and Classification",
       description:
